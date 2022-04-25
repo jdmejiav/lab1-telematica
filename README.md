@@ -22,7 +22,12 @@ crear un archivo para la configuración del sitio con el nombre del dominio
 ### 4.
 Pegar el contenido que está en el archivo <a href="https://github.com/jdmejiav/lab1-telematica/blob/master/jdmejiav.tk">jdmejiav.tk</a> que contiene la configuración del sitio, en el archivo se especifica la dirección del certificado SSL, se redirecciona al puerto 8080 y se establecen los headers del proxy
 
+### 5.
+Hay que establecer un link simbólico entre los archivos en la carpeta /etc/nginx/sited-available y los que estan en la carpeta /etc/nginx/sited-enabled
 
+      sudo ln -s /etc/nginx/sited-available/jdmejiav.tk /etc/nginx/sited-enabled/jdmejiav.tk
+      
+      
 
 ## Ver resultado
 Para visital la página desplegada, la URL es <a href="jdmejiav.tk">jdmejiav.tk</a>.
