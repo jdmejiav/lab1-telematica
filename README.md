@@ -16,6 +16,7 @@ Para activar el certificado.
       
 ### 3.
 crear un archivo para la configuración del sitio con el nombre del dominio
+
       touch /etc/nginx/sites-available/jdmejiav.tk
       
 ### 4.
