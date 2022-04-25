@@ -1,7 +1,7 @@
 # lab1-telematica
 
 
-Para el despligue del sitio web con certificado SSL y docker, lo que hice fue desplegar el sitio web con docker en el puerto 8080 y descargar nginx en local para que redirigiera todo el tráfico http y https a ese puerto, para hacer esto:
+Para el despligue del sitio web con certificado SSL y docker, lo que hice fue desplegar el sitio web con docker en el puerto 8080 e instalar y configurar nginx en local para que redirigiera todo el tráfico http y https a ese puerto, para hacer esto:
 
 
 ## Pasos
@@ -27,7 +27,10 @@ Hay que establecer un link simbólico entre los archivos en la carpeta /etc/ngin
 
       sudo ln -s /etc/nginx/sited-available/jdmejiav.tk /etc/nginx/sited-enabled/jdmejiav.tk
       
-      
+### 6.
+Reiniciar el servicio de nginx para actualizar los cambios en la configuración.
+
+      sudo systemctl restart nginx
 
 ## Ver resultado
 Para visital la página desplegada, la URL es <a href="jdmejiav.tk">jdmejiav.tk</a>.
